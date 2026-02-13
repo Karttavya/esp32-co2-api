@@ -56,7 +56,7 @@ function fetchData() {
     const percent = gasValue / 4095;
     const angle = percent * 180;
 
-    // Rotate needle
+    // Rotate needle (checked)
     document.getElementById("needle").setAttribute(
       "transform",
       "rotate(" + angle + " 130 130)"
@@ -130,4 +130,5 @@ setInterval(fetchData, 800);
 <h3 id="status" class="status safe">SAFE ✓</h3>
 
 </body>
+  
 </html>
